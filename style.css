@@ -1,0 +1,146 @@
+body {
+  background-color: #456;
+  font-family: "Courier New", Courier, monospace;
+
+}
+
+:root {
+  --current-color: aqua;
+  --new-color: #66f;
+}
+
+.outer-container {
+  background-color: var(--current-color);
+  border: solid purple;
+  border-radius: 32px;
+  width: 80vw;
+  margin: 2em auto;
+  /* animation: fade-in 4s forwards;
+  animation-delay: 5s;
+  transition: 7s; */
+}
+
+@keyframes colorize {
+  from {
+    background-color: var(--current-color);
+  }
+  to {
+    background-color: var(--new-color);
+  }
+}
+.colorish {
+  animation: colorize 3s forwards;
+}
+
+.img-container {
+  height: 42vh;
+  opacity: 0;
+  background-size: cover;
+  border-width: 0.2px;
+
+}
+
+.cincy {
+
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 40%;
+  margin: 2em auto;
+}
+
+.button-container div, .button-container button {
+  height: 3.5em;
+}
+
+.animate {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  height: 3.5em;
+
+  background-color: aquamarine;
+  color: black;
+  padding: 1em;
+  border-radius: 11px;
+}
+.animate:hover {
+  background-color: #66f;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #aaf6;
+  color: #9ff;
+  padding: 0 1em;
+  border-radius: 11px;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  border: solid black;
+}
+.dropdown > p {
+  display: block;
+}
+.drop-content {
+  display: none;
+  width: 70px;
+  margin: auto;
+  /* position: absolute; */
+  padding: 0.3em;
+  border-width: 0.2px;
+  background-color: #333C3F;
+  box-shadow: 0px 4px 16px 6px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.dropdown:hover .drop-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.change-color {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  height: 2.5em;
+  line-height: 1em;
+  background-color: fuchsia;
+  color: black;
+  padding: 1em;
+  border-radius: 11px;
+}
+
+
+
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    width: 30px;
+  }
+  to {
+    opacity: 1;
+    width: 80vw;
+  }
+}
+.fadey {
+  background-image:url('./img/DrAa10FW4AEGelE.jpg');
+  background-image:url('./img/noskycincy.png');
+  border-width: 7px;
+  border: solid purple;
+  border-radius: 32px;
+  opacity: 0;
+  animation: fade-in 4s forwards;
+  /* animation-delay: 5s; */
+  transition: 7s;
+}
+
